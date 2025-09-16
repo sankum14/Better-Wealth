@@ -101,10 +101,4 @@ This is an MVP **prototype** for demonstration and testing purposes only. It doe
 
 ---
 
-## 📌 License
 
-MIT License — free to use, modify, and distribute.
-
----
-
-👉 Do you want me to also add a **GitHub badge section** (build status, tech stack, license, demo link) at the very top so it looks like a polished open-source repo?

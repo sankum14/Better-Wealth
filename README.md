@@ -1,85 +1,110 @@
-Better Wealth - Financial Advisor Marketplace
-Better Wealth is a fully functional, single-file web application prototype designed to connect retail investors in India with professional, vetted financial advisors. The platform simulates an end-to-end user experience, from discovering an advisor to booking a session and completing a detailed investor profile, all without requiring a backend server.
+💸 BetterWealth – Financial Advisor Marketplace
 
-The core concept is to provide a trustworthy and accessible "Astrotalk for personal finance" for the Indian market.
+**BetterWealth** is a functional MVP web application designed to connect retail investors in India with **vetted, professional financial advisors**.
 
-Core Features Implemented in this MVP
-This prototype is built as a single better-wealth.html file but simulates a full-stack application using the browser's local storage as a database.
+It simulates an end-to-end user journey — from discovering an advisor, completing a **risk profile questionnaire**, to booking a consultation — inspired by an **“Astrotalk for personal finance”** model.
 
-Trust-Focused Landing Page: A professional and engaging homepage designed to build confidence with clear messaging, social proof ("As Featured In"), and testimonials.
 
-Dynamic Advisor Marketplace ("Find an Advisor"):
 
-Features over 20 detailed and realistic profiles of Indian financial advisors.
+## ✨ Features
 
-Includes dynamic filtering by specialty (e.g., Retirement Planning, NRI Investments).
+### 🏠 Trust-Focused Landing Page
 
-Allows sorting by consultation price (Low to High / High to Low).
+* Clean and professional homepage.
+* Social proof (“As Featured In”) + testimonials.
 
-Complete User Authentication:
+### 👨‍💼 Advisor Marketplace
 
-Fully functional Sign-Up and Login pages for investor accounts.
+* 20+ detailed advisor profiles.
+* Dynamic filters (by specialty) and sort (by price).
 
-The user's session is saved, keeping them logged in.
+### 🔐 User Authentication
 
-"For Advisors" Page: A dedicated informational page explaining the value proposition and verification process for financial professionals who wish to join the platform.
+* Sign-Up & Login for investors.
+* Sessions persisted using `localStorage`.
 
-Interactive Investor Dashboard:
+### 📈 Investor Dashboard
 
-A secure area for logged-in users.
+* Secure client area.
+* 20-question **Risk Profile Questionnaire**.
+* Appointment tracking (past & upcoming sessions).
 
-Risk Profile Questionnaire: A comprehensive 20-question survey to understand the investor's goals, risk tolerance, and financial situation.
+### 🤝 Advisor Matching
 
-Appointment Management: A section to view upcoming and past (simulated) appointments.
+* Smart recommendation engine based on questionnaire results.
+* Displays **top 3 advisors** matching client needs.
 
-Intelligent Advisor Recommendations:
+### 🎥 Simulated Video Consultations
 
-After an investor completes their profile, the application instantly analyzes their answers to identify key needs (e.g., "high-risk tolerance," "goal-oriented," "beginner").
+* “Join Call” buttons activate before scheduled sessions.
+* Realistic call screen + countdown timer.
 
-It then redirects the user to a personalized page showcasing the top 3 recommended advisors whose specialties best match the user's profile.
+### ⭐ Review & Rating System
 
-Simulated Video Call Experience:
+* Post-session star ratings + written feedback.
+* Reviews shown on advisor profiles.
 
-"Join Call" buttons become active just before a scheduled session.
+### 📢 “For Advisors” Page
 
-Leads to a realistic video call screen with a 45-minute countdown timer.
+* Explains verification, onboarding, and value proposition.
 
-Review and Rating System: After a session, users can leave a star rating and a written review for their advisor, which is then displayed on the advisor's public profile.
+---
 
-How to Run This Project
-Because this is a self-contained prototype, running it is extremely simple:
+## 🛠️ Tech Stack
 
-Download the File: Get the better-wealth.html file.
+* **Frontend:** HTML5
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) + custom CSS
+* **Logic / State Management:** Vanilla JavaScript (ES6)
+* **Persistence:** Browser `localStorage` (simulated backend)
 
-Open in Browser: Open the file directly in any modern web browser such as Google Chrome, Firefox, or Safari.
+---
 
-That's it! The full application will be running locally on your machine.
+## 📂 Project Structure
 
-Technology Stack
-This project is intentionally built with a minimal and accessible stack to demonstrate the full functionality in a single file.
+```bash
+betterwealth/
+├── index.html      # Main entry point (landing, routing, templates)
+├── styles.css      # Custom styles + Tailwind utilities
+├── script.js       # App logic, routing, localStorage handling
+└── README.md       # Project documentation
+```
 
-Frontend: Plain HTML
+---
 
-Styling: Tailwind CSS (loaded via CDN) for a modern, utility-first design.
+## 🚀 Getting Started
 
-Logic & "Backend": Vanilla JavaScript (ES6). All application logic, routing, and data management are handled by the script within the HTML file.
+1. Clone this repository:
 
-A Note on the "Simulated Backend"
-This prototype uses the browser's localStorage to function as a persistent database.
+   ```bash
+   git clone https://github.com/<your-username>/betterwealth.git
+   cd betterwealth
+   ```
 
-When you create an account, your user details are saved in localStorage.
+2. Open `index.html` in any modern browser (Chrome, Firefox, Safari).
 
-When you book an appointment or save your profile, the data is updated in localStorage.
+That’s it — the full app runs locally without any setup.
 
-This allows the website to "remember" you and your data even if you close the browser tab and reopen it later, simulating the experience of a real web application with a server and database.
+---
 
-Future Development & Next Steps
-This MVP serves as a robust proof of concept. The logical next steps to turn this into a production-ready application would be:
+## 🔮 Future Development
 
-Backend Development: Rebuild the application logic using a proper backend framework (e.g., Node.js with Express, Python with Django) and a real database (e.g., PostgreSQL).
+* 🗄 **Backend Integration:** Node.js (Express) / Django + PostgreSQL.
+* 💳 **Payments:** Razorpay / Stripe integration.
+* 📞 **Real Video Calls:** WebRTC (Twilio / Agora).
+* 📊 **Advisor Dashboard:** Profile management, availability, payouts.
 
-Payment Gateway Integration: Integrate a real payment provider like Razorpay or Stripe to handle consultation payments.
+---
 
-Real Video Calling: Replace the simulated call page with a real WebRTC service like Twilio or Agora.io.
+## ⚠️ Disclaimer
 
-Advisor Dashboard: Build out the full functionality for the advisor-side portal, including profile management, availability setting, and payout tracking.
+This is an MVP **prototype** for demonstration and testing purposes only. It does not provide real financial advice or process actual transactions.
+
+---
+
+## 📌 License
+
+MIT License — free to use, modify, and distribute.
+
+---
+
+👉 Do you want me to also add a **GitHub badge section** (build status, tech stack, license, demo link) at the very top so it looks like a polished open-source repo?

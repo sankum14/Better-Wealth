@@ -2,7 +2,7 @@
 
 **BetterWealth** is a functional MVP web application designed to connect retail investors in India with **vetted, professional financial advisors**.
 
-It simulates an end-to-end user journey — from discovering an advisor, completing a **risk profile questionnaire**, to booking a consultation — inspired by an **“Astrotalk for personal finance”** model.
+It simulates an end-to-end user journey from discovering an advisor, completing a **risk profile questionnaire**, to booking a consultation.
 
 
 

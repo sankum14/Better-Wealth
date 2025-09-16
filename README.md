@@ -1,4 +1,4 @@
-#💸 BetterWealth – Financial Advisor Marketplace
+# 💸 BetterWealth – Financial Advisor Marketplace
 
 **BetterWealth** is a functional MVP web application designed to connect retail investors in India with **vetted, professional financial advisors**.
 
